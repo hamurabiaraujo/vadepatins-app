@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { TranslateService } from "@ngx-translate/core";
 
 import { LoginPage } from '../login/login';
 import { SignupPage } from '../signup/signup';
@@ -16,7 +17,12 @@ import { SignupPage } from '../signup/signup';
 })
 export class WelcomePage {
 
-  constructor(public navCtrl: NavController) { }
+  constructor(
+    public navCtrl: NavController,
+    public translate: TranslateService
+  ) { 
+    translate.use('pt-br');
+  }
 
   login() {
     this.navCtrl.push(LoginPage);
