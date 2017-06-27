@@ -22,6 +22,7 @@ import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 
 import { RollerbladeListPage } from "../pages/rol-list/rol-list";
+import { RollerbladeDetailPage } from "../pages/rol-detail/rol-detail";
 import { Rollerblades } from "../mocks/providers/rollerblades";
 
 import { Api } from '../providers/api';
@@ -75,7 +76,8 @@ export function provideSettings(storage: Storage) {
     TabsPage,
     TutorialPage,
     WelcomePage, 
-    RollerbladeListPage
+    RollerbladeListPage,
+    RollerbladeDetailPage
   ],
   imports: [
     BrowserModule,
@@ -107,7 +109,8 @@ export function provideSettings(storage: Storage) {
     TabsPage,
     TutorialPage,
     WelcomePage,
-    RollerbladeListPage
+    RollerbladeListPage,
+    RollerbladeDetailPage
   ],
   providers: [
     Api,

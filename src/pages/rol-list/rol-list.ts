@@ -11,6 +11,7 @@ import { Item } from '../../models/item';
 
 import { Rollerblade } from "../../models/rollerblade";
 import { Rollerblades } from "../../mocks/providers/rollerblades";
+import { RollerbladeDetailPage } from "../rol-detail/rol-detail";
 
 
 @Component({
@@ -42,6 +43,12 @@ export class RollerbladeListPage {
   openItem(item: Item) {
     this.navCtrl.push(ItemDetailPage, {
       item: item
+    });
+  }
+
+  openRollerblade(rol: Rollerblade) {
+    this.navCtrl.push(RollerbladeDetailPage, {
+      rol: rol
     });
   }
 }

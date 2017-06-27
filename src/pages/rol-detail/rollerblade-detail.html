@@ -1,0 +1,20 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{ rol.model }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content>
+  <div class="item-profile" text-center #profilePic [style.background-image]="'url(' + rol.image + ')'">
+  </div>
+
+  <div class="item-detail" padding>
+    <h2>Modelo: {{rol.model}}</h2>
+    <p>Tamanho: {{rol.size}}</p>
+    <p>Marca: {{rol.brand}}</p>
+    <p>Cod: {{rol.cod}}</p>
+  </div>
+</ion-content>
