@@ -10,13 +10,12 @@
 <ion-content>
   <ion-searchbar (ionInput)="getItems($event)" placeholder="{{ 'SEARCH_PLACEHOLDER' | translate }}"></ion-searchbar>
   <ion-list>
-    <button ion-item (click)="openItem(item)" *ngFor="let item of currentItems">
+    <button ion-item (click)="openItem(r)" *ngFor="let r of rol">
       <ion-avatar item-start>
-        <img [src]="item.profilePic" />
+        <img [src]="r.image" />
       </ion-avatar>
-      <h2>{{item.name}}</h2>
-      <p>{{item.about}}</p>
-      <ion-note item-end *ngIf="item.note">{{item.note}}</ion-note>
+      <h2>{{r.model}}</h2>
+      <p>TAM: {{r.size}} - COD: {{r.cod}}</p>
     </button>
   </ion-list>
 </ion-content>
