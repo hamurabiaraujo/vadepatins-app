@@ -5,6 +5,7 @@ export class Rollerblade {
   image: string;
   brand: string;
   size: number;
+  model: string;
 
   constructor() { }
 }
