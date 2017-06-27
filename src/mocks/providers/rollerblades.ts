@@ -17,7 +17,8 @@ export class Rollerblades {
     r.model = 'Super power legal';
     
     this.rol.push(r);
-
+    r = {};
+    
     r.id = 2;
     r.cod = 'QWE789';
     r.image = 'assets/img/rol/patins_verde_0.jpg';
