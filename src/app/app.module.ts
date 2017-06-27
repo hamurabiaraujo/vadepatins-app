@@ -21,6 +21,9 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { TutorialPage } from '../pages/tutorial/tutorial';
 import { WelcomePage } from '../pages/welcome/welcome';
 
+import { RollerbladeListPage } from "../pages/rol-list/rol-list";
+import { Rollerblades } from "../mocks/providers/rollerblades";
+
 import { Api } from '../providers/api';
 import { Items } from '../mocks/providers/items';
 import { Settings } from '../providers/settings';
@@ -71,7 +74,8 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage, 
+    RollerbladeListPage
   ],
   imports: [
     BrowserModule,
@@ -102,11 +106,13 @@ export function provideSettings(storage: Storage) {
     SignupPage,
     TabsPage,
     TutorialPage,
-    WelcomePage
+    WelcomePage,
+    RollerbladeListPage
   ],
   providers: [
     Api,
     Items,
+    Rollerblades,
     User,
     Camera,
     GoogleMaps,

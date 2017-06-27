@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavController, ToastController } from 'ionic-angular';
 
 import { MainPage } from '../../pages/pages';
+import { RollerbladeListPage } from "../rol-list/rol-list";
 
 import { User } from '../../providers/user';
 
@@ -39,7 +40,7 @@ export class LoginPage {
     this.user.login(this.account).subscribe((resp) => {
       this.navCtrl.push(MainPage);
     }, (err) => {
-      this.navCtrl.push(MainPage);
+      this.navCtrl.push(RollerbladeListPage);
     });
   }
 }
